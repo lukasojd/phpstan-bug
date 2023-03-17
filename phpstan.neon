@@ -1,0 +1,21 @@
+parameters:
+    level: max
+    checkExplicitMixed: true
+
+    paths:
+        - src
+
+    checkTooWideReturnTypesInProtectedAndPublicMethods: true
+    checkUninitializedProperties: true
+    checkMissingCallableSignature: true
+    checkGenericClassInNonGenericObjectType: false
+
+    exceptions:
+        check:
+            missingCheckedExceptionInThrows: true
+            tooWideThrowType: true
+
+    ignoreErrors:
+
+includes:
+    - vendor/phpstan/phpstan/conf/bleedingEdge.neon
